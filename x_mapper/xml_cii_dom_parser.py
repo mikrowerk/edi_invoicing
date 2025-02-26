@@ -6,7 +6,7 @@ from datetime import datetime
 from drafthorse.models.document import Document
 
 from .xml_abstract_x_rechnung_parser import XMLAbstractXRechnungParser
-from model.x_rechnung import (XRechnung, XRechnungCurrency, XRechnungTradeParty, XRechnungTradeAddress,
+from ..model.x_rechnung import (XRechnung, XRechnungCurrency, XRechnungTradeParty, XRechnungTradeAddress,
                               XRechnungTradeContact, XRechnungPaymentMeans, XRechnungFinancialCard,
                               XRechnungTradeLine, XRechnungAppliedTradeTax, XRechnungBankAccount)
 
