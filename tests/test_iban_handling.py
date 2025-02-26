@@ -1,5 +1,4 @@
 import unittest
-from parameterized import parameterized
 from schwifty import IBAN
 
 _iban_1 = 'DE43500105175451887913'

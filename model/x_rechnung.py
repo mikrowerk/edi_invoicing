@@ -2,6 +2,10 @@ from datetime import datetime
 from dataclasses import dataclass, asdict
 from decimal import Decimal
 
+__all__ = ['XRechnung', "XRechnungCurrency", "XRechnungTradeParty", "XRechnungTradeAddress", "XRechnungTradeContact",
+           "XRechnungPaymentMeans", "XRechnungBankAccount", "XRechnungAppliedTradeTax", "XRechnungTradeLine",
+           "XRechnungFinancialCard"]
+
 
 @dataclass
 class XRechnungCurrency:

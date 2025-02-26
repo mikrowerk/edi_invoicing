@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from model.x_rechnung import XRechnung
+from ..model.x_rechnung import XRechnung
 
 
 class XMLAbstractXRechnungParser(ABC):

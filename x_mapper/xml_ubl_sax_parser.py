@@ -7,7 +7,7 @@ from collections import deque
 import xml.sax as sax
 from decimal import Decimal
 
-from model.x_rechnung import (XRechnung, XRechnungTradeParty, XRechnungTradeAddress, XRechnungTradeContact,
+from ..model.x_rechnung import (XRechnung, XRechnungTradeParty, XRechnungTradeAddress, XRechnungTradeContact,
                               XRechnungPaymentMeans, XRechnungBankAccount, XRechnungCurrency, XRechnungTradeLine,
                               XRechnungAppliedTradeTax)
 from .xml_abstract_x_rechnung_parser import XMLAbstractXRechnungParser

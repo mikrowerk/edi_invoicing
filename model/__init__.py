@@ -1,1 +1,3 @@
-from .x_rechnung import *
+from .x_rechnung import XRechnung
+
+__all__ = ["XRechnung"]
