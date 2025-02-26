@@ -1,0 +1,715 @@
+------------------------------ Start ---------------------------------------------------
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 Invoice >>>>>>>>>>>>>>>>
+Invoice
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 CustomizationID >>>>>>>>>>>>>>>>
+Invoice/CustomizationID
+content:'urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0'
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 CustomizationID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ProfileID >>>>>>>>>>>>>>>>
+Invoice/ProfileID
+content:'urn:fdc:pep-pol.eu:2017:poacc:billing:01:1.0'
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ProfileID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/ID
+content:'RG00343552'
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 IssueDate >>>>>>>>>>>>>>>>
+Invoice/IssueDate
+content:'2025-01-28'
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 IssueDate <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 InvoiceTypeCode >>>>>>>>>>>>>>>>
+Invoice/InvoiceTypeCode
+content:'380'
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 InvoiceTypeCode <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 DocumentCurrencyCode >>>>>>>>>>>>>>>>
+Invoice/DocumentCurrencyCode
+content:'EUR'
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 DocumentCurrencyCode <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 BuyerReference >>>>>>>>>>>>>>>>
+Invoice/BuyerReference
+content:'-'
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 BuyerReference <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 OrderReference >>>>>>>>>>>>>>>>
+Invoice/OrderReference
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/OrderReference/ID
+content:'100277182'
+Invoice/OrderReference
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 SalesOrderID >>>>>>>>>>>>>>>>
+Invoice/OrderReference/SalesOrderID
+content:'AB00357890'
+Invoice/OrderReference
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 SalesOrderID <<<<<<<<<<<<<<<
+content:''
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 OrderReference <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 DespatchDocumentReference >>>>>>>>>>>>>>>>
+Invoice/DespatchDocumentReference
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/DespatchDocumentReference/ID
+content:'LS00391390'
+Invoice/DespatchDocumentReference
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+content:''
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 DespatchDocumentReference <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 AccountingSupplierParty >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Party >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 EndpointID >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/EndpointID
+(None, 'schemeID'): EM
+content:'rechnung@vispronet.de'
+Invoice/AccountingSupplierParty/Party
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 EndpointID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PartyName >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PartyName
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Name >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PartyName/Name
+content:'Vispronet®'
+Invoice/AccountingSupplierParty/Party/PartyName
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Name <<<<<<<<<<<<<<<
+content:''
+Invoice/AccountingSupplierParty/Party
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PartyName <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PostalAddress >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PostalAddress
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 StreetName >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PostalAddress/StreetName
+content:'Am Wiesengrund 2'
+Invoice/AccountingSupplierParty/Party/PostalAddress
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 StreetName <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 CityName >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PostalAddress/CityName
+content:'Kamenz'
+Invoice/AccountingSupplierParty/Party/PostalAddress
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 CityName <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PostalZone >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PostalAddress/PostalZone
+content:'01917'
+Invoice/AccountingSupplierParty/Party/PostalAddress
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PostalZone <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Country >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PostalAddress/Country
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 IdentificationCode >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PostalAddress/Country/IdentificationCode
+content:'DE'
+Invoice/AccountingSupplierParty/Party/PostalAddress/Country
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 IdentificationCode <<<<<<<<<<<<<<<
+content:''
+Invoice/AccountingSupplierParty/Party/PostalAddress
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Country <<<<<<<<<<<<<<<
+content:''
+Invoice/AccountingSupplierParty/Party
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PostalAddress <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PartyTaxScheme >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PartyTaxScheme
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 CompanyID >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PartyTaxScheme/CompanyID
+content:'DE165816052'
+Invoice/AccountingSupplierParty/Party/PartyTaxScheme
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 CompanyID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxScheme >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PartyTaxScheme/TaxScheme
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PartyTaxScheme/TaxScheme/ID
+content:'VAT'
+Invoice/AccountingSupplierParty/Party/PartyTaxScheme/TaxScheme
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+content:''
+Invoice/AccountingSupplierParty/Party/PartyTaxScheme
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxScheme <<<<<<<<<<<<<<<
+content:''
+Invoice/AccountingSupplierParty/Party
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PartyTaxScheme <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PartyLegalEntity >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PartyLegalEntity
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 RegistrationName >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PartyLegalEntity/RegistrationName
+content:'Sachsen Fahnen GmbH & Co. KG'
+Invoice/AccountingSupplierParty/Party/PartyLegalEntity
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 RegistrationName <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 CompanyID >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PartyLegalEntity/CompanyID
+content:'HRA 1963'
+Invoice/AccountingSupplierParty/Party/PartyLegalEntity
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 CompanyID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 CompanyLegalForm >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/PartyLegalEntity/CompanyLegalForm
+content:'Vispronet® ist eine Marke und Unternehmung der Sachsen Fahnen GmbH & Co. KG, Handelsregister: AG Dresden HRA 1963, Komplementärin: Sachsen Fahnen Verwaltungs GmbH, Handelsregister: AG Dresden HRB 12291, Geschäftsführer: Jürgen Ruhland, Marcel Ruhland'
+Invoice/AccountingSupplierParty/Party/PartyLegalEntity
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 CompanyLegalForm <<<<<<<<<<<<<<<
+content:''
+Invoice/AccountingSupplierParty/Party
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PartyLegalEntity <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Contact >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/Contact
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Name >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/Contact/Name
+content:'Vispronet Team'
+Invoice/AccountingSupplierParty/Party/Contact
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Name <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Telephone >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/Contact/Telephone
+content:'+49 3578 359-4040'
+Invoice/AccountingSupplierParty/Party/Contact
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Telephone <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ElectronicMail >>>>>>>>>>>>>>>>
+Invoice/AccountingSupplierParty/Party/Contact/ElectronicMail
+content:'info@vispronet.de'
+Invoice/AccountingSupplierParty/Party/Contact
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ElectronicMail <<<<<<<<<<<<<<<
+content:''
+Invoice/AccountingSupplierParty/Party
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Contact <<<<<<<<<<<<<<<
+content:''
+Invoice/AccountingSupplierParty
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Party <<<<<<<<<<<<<<<
+content:''
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 AccountingSupplierParty <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 AccountingCustomerParty >>>>>>>>>>>>>>>>
+Invoice/AccountingCustomerParty
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Party >>>>>>>>>>>>>>>>
+Invoice/AccountingCustomerParty/Party
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 EndpointID >>>>>>>>>>>>>>>>
+Invoice/AccountingCustomerParty/Party/EndpointID
+(None, 'schemeID'): EM
+content:'print@griffity.de'
+Invoice/AccountingCustomerParty/Party
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 EndpointID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PartyIdentification >>>>>>>>>>>>>>>>
+Invoice/AccountingCustomerParty/Party/PartyIdentification
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/AccountingCustomerParty/Party/PartyIdentification/ID
+content:'D01007767'
+Invoice/AccountingCustomerParty/Party/PartyIdentification
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+content:''
+Invoice/AccountingCustomerParty/Party
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PartyIdentification <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PostalAddress >>>>>>>>>>>>>>>>
+Invoice/AccountingCustomerParty/Party/PostalAddress
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 StreetName >>>>>>>>>>>>>>>>
+Invoice/AccountingCustomerParty/Party/PostalAddress/StreetName
+content:'Hanns-Schwindt-Str. 8'
+Invoice/AccountingCustomerParty/Party/PostalAddress
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 StreetName <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 CityName >>>>>>>>>>>>>>>>
+Invoice/AccountingCustomerParty/Party/PostalAddress/CityName
+content:'München'
+Invoice/AccountingCustomerParty/Party/PostalAddress
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 CityName <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PostalZone >>>>>>>>>>>>>>>>
+Invoice/AccountingCustomerParty/Party/PostalAddress/PostalZone
+content:'81829'
+Invoice/AccountingCustomerParty/Party/PostalAddress
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PostalZone <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Country >>>>>>>>>>>>>>>>
+Invoice/AccountingCustomerParty/Party/PostalAddress/Country
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 IdentificationCode >>>>>>>>>>>>>>>>
+Invoice/AccountingCustomerParty/Party/PostalAddress/Country/IdentificationCode
+content:'DE'
+Invoice/AccountingCustomerParty/Party/PostalAddress/Country
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 IdentificationCode <<<<<<<<<<<<<<<
+content:''
+Invoice/AccountingCustomerParty/Party/PostalAddress
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Country <<<<<<<<<<<<<<<
+content:''
+Invoice/AccountingCustomerParty/Party
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PostalAddress <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PartyLegalEntity >>>>>>>>>>>>>>>>
+Invoice/AccountingCustomerParty/Party/PartyLegalEntity
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 RegistrationName >>>>>>>>>>>>>>>>
+Invoice/AccountingCustomerParty/Party/PartyLegalEntity/RegistrationName
+content:'griffity GmbH'
+Invoice/AccountingCustomerParty/Party/PartyLegalEntity
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 RegistrationName <<<<<<<<<<<<<<<
+content:''
+Invoice/AccountingCustomerParty/Party
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PartyLegalEntity <<<<<<<<<<<<<<<
+content:''
+Invoice/AccountingCustomerParty
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Party <<<<<<<<<<<<<<<
+content:''
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 AccountingCustomerParty <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Delivery >>>>>>>>>>>>>>>>
+Invoice/Delivery
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ActualDeliveryDate >>>>>>>>>>>>>>>>
+Invoice/Delivery/ActualDeliveryDate
+content:'2025-01-27'
+Invoice/Delivery
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ActualDeliveryDate <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 DeliveryLocation >>>>>>>>>>>>>>>>
+Invoice/Delivery/DeliveryLocation
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Address >>>>>>>>>>>>>>>>
+Invoice/Delivery/DeliveryLocation/Address
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 StreetName >>>>>>>>>>>>>>>>
+Invoice/Delivery/DeliveryLocation/Address/StreetName
+content:'Hanns-Schwindt-Str. 8'
+Invoice/Delivery/DeliveryLocation/Address
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 StreetName <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 CityName >>>>>>>>>>>>>>>>
+Invoice/Delivery/DeliveryLocation/Address/CityName
+content:'München'
+Invoice/Delivery/DeliveryLocation/Address
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 CityName <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PostalZone >>>>>>>>>>>>>>>>
+Invoice/Delivery/DeliveryLocation/Address/PostalZone
+content:'81829'
+Invoice/Delivery/DeliveryLocation/Address
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PostalZone <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Country >>>>>>>>>>>>>>>>
+Invoice/Delivery/DeliveryLocation/Address/Country
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 IdentificationCode >>>>>>>>>>>>>>>>
+Invoice/Delivery/DeliveryLocation/Address/Country/IdentificationCode
+content:'DE'
+Invoice/Delivery/DeliveryLocation/Address/Country
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 IdentificationCode <<<<<<<<<<<<<<<
+content:''
+Invoice/Delivery/DeliveryLocation/Address
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Country <<<<<<<<<<<<<<<
+content:''
+Invoice/Delivery/DeliveryLocation
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Address <<<<<<<<<<<<<<<
+content:''
+Invoice/Delivery
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 DeliveryLocation <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 DeliveryParty >>>>>>>>>>>>>>>>
+Invoice/Delivery/DeliveryParty
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PartyName >>>>>>>>>>>>>>>>
+Invoice/Delivery/DeliveryParty/PartyName
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Name >>>>>>>>>>>>>>>>
+Invoice/Delivery/DeliveryParty/PartyName/Name
+content:'griffity GmbH'
+Invoice/Delivery/DeliveryParty/PartyName
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Name <<<<<<<<<<<<<<<
+content:''
+Invoice/Delivery/DeliveryParty
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PartyName <<<<<<<<<<<<<<<
+content:''
+Invoice/Delivery
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 DeliveryParty <<<<<<<<<<<<<<<
+content:''
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Delivery <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PaymentMeans >>>>>>>>>>>>>>>>
+Invoice/PaymentMeans
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PaymentMeansCode >>>>>>>>>>>>>>>>
+Invoice/PaymentMeans/PaymentMeansCode
+content:'30'
+Invoice/PaymentMeans
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PaymentMeansCode <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PaymentID >>>>>>>>>>>>>>>>
+Invoice/PaymentMeans/PaymentID
+content:'RG00343552'
+Invoice/PaymentMeans
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PaymentID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PayeeFinancialAccount >>>>>>>>>>>>>>>>
+Invoice/PaymentMeans/PayeeFinancialAccount
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/PaymentMeans/PayeeFinancialAccount/ID
+content:'DE66850503003200082460'
+Invoice/PaymentMeans/PayeeFinancialAccount
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 FinancialInstitutionBranch >>>>>>>>>>>>>>>>
+Invoice/PaymentMeans/PayeeFinancialAccount/FinancialInstitutionBranch
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/PaymentMeans/PayeeFinancialAccount/FinancialInstitutionBranch/ID
+content:'OSDDDE81XXX'
+Invoice/PaymentMeans/PayeeFinancialAccount/FinancialInstitutionBranch
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+content:''
+Invoice/PaymentMeans/PayeeFinancialAccount
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 FinancialInstitutionBranch <<<<<<<<<<<<<<<
+content:''
+Invoice/PaymentMeans
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PayeeFinancialAccount <<<<<<<<<<<<<<<
+content:''
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PaymentMeans <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PaymentMeans >>>>>>>>>>>>>>>>
+Invoice/PaymentMeans
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PaymentMeansCode >>>>>>>>>>>>>>>>
+Invoice/PaymentMeans/PaymentMeansCode
+content:'30'
+Invoice/PaymentMeans
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PaymentMeansCode <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PaymentID >>>>>>>>>>>>>>>>
+Invoice/PaymentMeans/PaymentID
+content:'RG00343552'
+Invoice/PaymentMeans
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PaymentID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PayeeFinancialAccount >>>>>>>>>>>>>>>>
+Invoice/PaymentMeans/PayeeFinancialAccount
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/PaymentMeans/PayeeFinancialAccount/ID
+content:'DE13870700000630153500'
+Invoice/PaymentMeans/PayeeFinancialAccount
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 FinancialInstitutionBranch >>>>>>>>>>>>>>>>
+Invoice/PaymentMeans/PayeeFinancialAccount/FinancialInstitutionBranch
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/PaymentMeans/PayeeFinancialAccount/FinancialInstitutionBranch/ID
+content:'DEUTDE8C870'
+Invoice/PaymentMeans/PayeeFinancialAccount/FinancialInstitutionBranch
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+content:''
+Invoice/PaymentMeans/PayeeFinancialAccount
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 FinancialInstitutionBranch <<<<<<<<<<<<<<<
+content:''
+Invoice/PaymentMeans
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PayeeFinancialAccount <<<<<<<<<<<<<<<
+content:''
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PaymentMeans <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PaymentTerms >>>>>>>>>>>>>>>>
+Invoice/PaymentTerms
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Note >>>>>>>>>>>>>>>>
+Invoice/PaymentTerms/Note
+content:'Zahlung per Paypal, Betrag dankend erhalten'
+Invoice/PaymentTerms
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Note <<<<<<<<<<<<<<<
+content:''
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 PaymentTerms <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 AllowanceCharge >>>>>>>>>>>>>>>>
+Invoice/AllowanceCharge
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ChargeIndicator >>>>>>>>>>>>>>>>
+Invoice/AllowanceCharge/ChargeIndicator
+content:'true'
+Invoice/AllowanceCharge
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ChargeIndicator <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 AllowanceChargeReason >>>>>>>>>>>>>>>>
+Invoice/AllowanceCharge/AllowanceChargeReason
+content:'Versandkosten'
+Invoice/AllowanceCharge
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 AllowanceChargeReason <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Amount >>>>>>>>>>>>>>>>
+Invoice/AllowanceCharge/Amount
+(None, 'currencyID'): EUR
+content:'15.80'
+Invoice/AllowanceCharge
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Amount <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxCategory >>>>>>>>>>>>>>>>
+Invoice/AllowanceCharge/TaxCategory
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/AllowanceCharge/TaxCategory/ID
+content:'S'
+Invoice/AllowanceCharge/TaxCategory
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Percent >>>>>>>>>>>>>>>>
+Invoice/AllowanceCharge/TaxCategory/Percent
+content:'19.00'
+Invoice/AllowanceCharge/TaxCategory
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Percent <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxScheme >>>>>>>>>>>>>>>>
+Invoice/AllowanceCharge/TaxCategory/TaxScheme
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/AllowanceCharge/TaxCategory/TaxScheme/ID
+content:'VAT'
+Invoice/AllowanceCharge/TaxCategory/TaxScheme
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+content:''
+Invoice/AllowanceCharge/TaxCategory
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxScheme <<<<<<<<<<<<<<<
+content:''
+Invoice/AllowanceCharge
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxCategory <<<<<<<<<<<<<<<
+content:''
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 AllowanceCharge <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxTotal >>>>>>>>>>>>>>>>
+Invoice/TaxTotal
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 TaxAmount >>>>>>>>>>>>>>>>
+Invoice/TaxTotal/TaxAmount
+(None, 'currencyID'): EUR
+content:'87.42'
+Invoice/TaxTotal
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 TaxAmount <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxSubtotal >>>>>>>>>>>>>>>>
+Invoice/TaxTotal/TaxSubtotal
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 TaxableAmount >>>>>>>>>>>>>>>>
+Invoice/TaxTotal/TaxSubtotal/TaxableAmount
+(None, 'currencyID'): EUR
+content:'460.10'
+Invoice/TaxTotal/TaxSubtotal
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 TaxableAmount <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 TaxAmount >>>>>>>>>>>>>>>>
+Invoice/TaxTotal/TaxSubtotal/TaxAmount
+(None, 'currencyID'): EUR
+content:'87.42'
+Invoice/TaxTotal/TaxSubtotal
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 TaxAmount <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxCategory >>>>>>>>>>>>>>>>
+Invoice/TaxTotal/TaxSubtotal/TaxCategory
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/TaxTotal/TaxSubtotal/TaxCategory/ID
+content:'S'
+Invoice/TaxTotal/TaxSubtotal/TaxCategory
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Percent >>>>>>>>>>>>>>>>
+Invoice/TaxTotal/TaxSubtotal/TaxCategory/Percent
+content:'19.00'
+Invoice/TaxTotal/TaxSubtotal/TaxCategory
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Percent <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxScheme >>>>>>>>>>>>>>>>
+Invoice/TaxTotal/TaxSubtotal/TaxCategory/TaxScheme
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/TaxTotal/TaxSubtotal/TaxCategory/TaxScheme/ID
+content:'VAT'
+Invoice/TaxTotal/TaxSubtotal/TaxCategory/TaxScheme
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+content:''
+Invoice/TaxTotal/TaxSubtotal/TaxCategory
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxScheme <<<<<<<<<<<<<<<
+content:''
+Invoice/TaxTotal/TaxSubtotal
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxCategory <<<<<<<<<<<<<<<
+content:''
+Invoice/TaxTotal
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxSubtotal <<<<<<<<<<<<<<<
+content:''
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxTotal <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 LegalMonetaryTotal >>>>>>>>>>>>>>>>
+Invoice/LegalMonetaryTotal
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 LineExtensionAmount >>>>>>>>>>>>>>>>
+Invoice/LegalMonetaryTotal/LineExtensionAmount
+(None, 'currencyID'): EUR
+content:'444.30'
+Invoice/LegalMonetaryTotal
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 LineExtensionAmount <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 TaxExclusiveAmount >>>>>>>>>>>>>>>>
+Invoice/LegalMonetaryTotal/TaxExclusiveAmount
+(None, 'currencyID'): EUR
+content:'460.10'
+Invoice/LegalMonetaryTotal
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 TaxExclusiveAmount <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 TaxInclusiveAmount >>>>>>>>>>>>>>>>
+Invoice/LegalMonetaryTotal/TaxInclusiveAmount
+(None, 'currencyID'): EUR
+content:'547.52'
+Invoice/LegalMonetaryTotal
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 TaxInclusiveAmount <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 AllowanceTotalAmount >>>>>>>>>>>>>>>>
+Invoice/LegalMonetaryTotal/AllowanceTotalAmount
+(None, 'currencyID'): EUR
+content:'0.00'
+Invoice/LegalMonetaryTotal
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 AllowanceTotalAmount <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ChargeTotalAmount >>>>>>>>>>>>>>>>
+Invoice/LegalMonetaryTotal/ChargeTotalAmount
+(None, 'currencyID'): EUR
+content:'15.80'
+Invoice/LegalMonetaryTotal
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ChargeTotalAmount <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PrepaidAmount >>>>>>>>>>>>>>>>
+Invoice/LegalMonetaryTotal/PrepaidAmount
+(None, 'currencyID'): EUR
+content:'0.00'
+Invoice/LegalMonetaryTotal
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PrepaidAmount <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PayableAmount >>>>>>>>>>>>>>>>
+Invoice/LegalMonetaryTotal/PayableAmount
+(None, 'currencyID'): EUR
+content:'547.52'
+Invoice/LegalMonetaryTotal
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PayableAmount <<<<<<<<<<<<<<<
+content:''
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 LegalMonetaryTotal <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 InvoiceLine >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/ID
+content:'100'
+Invoice/InvoiceLine
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Note >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Note
+content:'Versanddatum: 2025-01-27'
+Invoice/InvoiceLine
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Note <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 InvoicedQuantity >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/InvoicedQuantity
+(None, 'unitCode'): C62
+content:'30.00'
+Invoice/InvoiceLine
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 InvoicedQuantity <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 LineExtensionAmount >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/LineExtensionAmount
+(None, 'currencyID'): EUR
+content:'147.30'
+Invoice/InvoiceLine
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 LineExtensionAmount <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Item >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Description >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/Description
+content:'Tischbanner /rechteckig mit gespitzter Unterkante und Kordel (doppellagig /zwei Druckseiten /beidseitig positiver Druck)'
+Invoice/InvoiceLine/Item
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Description <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Name >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/Name
+content:'10TISCHB03300D10'
+Invoice/InvoiceLine/Item
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Name <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 SellersItemIdentification >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/SellersItemIdentification
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/SellersItemIdentification/ID
+content:'10TISCHB03300D10'
+Invoice/InvoiceLine/Item/SellersItemIdentification
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+content:''
+Invoice/InvoiceLine/Item
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 SellersItemIdentification <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 ClassifiedTaxCategory >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory/ID
+content:'S'
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Percent >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory/Percent
+content:'19.00'
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Percent <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxScheme >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory/TaxScheme
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory/TaxScheme/ID
+content:'VAT'
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory/TaxScheme
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+content:''
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxScheme <<<<<<<<<<<<<<<
+content:''
+Invoice/InvoiceLine/Item
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 ClassifiedTaxCategory <<<<<<<<<<<<<<<
+content:''
+Invoice/InvoiceLine
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Item <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Price >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Price
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PriceAmount >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Price/PriceAmount
+(None, 'currencyID'): EUR
+content:'4.91'
+Invoice/InvoiceLine/Price
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PriceAmount <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 BaseQuantity >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Price/BaseQuantity
+(None, 'unitCode'): C62
+content:'1.00'
+Invoice/InvoiceLine/Price
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 BaseQuantity <<<<<<<<<<<<<<<
+content:''
+Invoice/InvoiceLine
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Price <<<<<<<<<<<<<<<
+content:''
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 InvoiceLine <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 InvoiceLine >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/ID
+content:'101'
+Invoice/InvoiceLine
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Note >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Note
+content:'Versanddatum: 2025-01-27'
+Invoice/InvoiceLine
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Note <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 InvoicedQuantity >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/InvoicedQuantity
+(None, 'unitCode'): C62
+content:'30.00'
+Invoice/InvoiceLine
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 InvoicedQuantity <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 LineExtensionAmount >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/LineExtensionAmount
+(None, 'currencyID'): EUR
+content:'297.00'
+Invoice/InvoiceLine
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 LineExtensionAmount <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Item >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Name >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/Name
+content:'Kombiständer, Chrom, Höhe 44 cm'
+Invoice/InvoiceLine/Item
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Name <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 SellersItemIdentification >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/SellersItemIdentification
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/SellersItemIdentification/ID
+content:'ZB10EZ1010120000'
+Invoice/InvoiceLine/Item/SellersItemIdentification
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+content:''
+Invoice/InvoiceLine/Item
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 SellersItemIdentification <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 ClassifiedTaxCategory >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory/ID
+content:'S'
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Percent >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory/Percent
+content:'19.00'
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 Percent <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxScheme >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory/TaxScheme
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory/TaxScheme/ID
+content:'VAT'
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory/TaxScheme
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 ID <<<<<<<<<<<<<<<
+content:''
+Invoice/InvoiceLine/Item/ClassifiedTaxCategory
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 TaxScheme <<<<<<<<<<<<<<<
+content:''
+Invoice/InvoiceLine/Item
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 ClassifiedTaxCategory <<<<<<<<<<<<<<<
+content:''
+Invoice/InvoiceLine
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Item <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Price >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Price
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PriceAmount >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Price/PriceAmount
+(None, 'currencyID'): EUR
+content:'9.90'
+Invoice/InvoiceLine/Price
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 PriceAmount <<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>> start: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 BaseQuantity >>>>>>>>>>>>>>>>
+Invoice/InvoiceLine/Price/BaseQuantity
+(None, 'unitCode'): C62
+content:'1.00'
+Invoice/InvoiceLine/Price
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 BaseQuantity <<<<<<<<<<<<<<<
+content:''
+Invoice/InvoiceLine
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 Price <<<<<<<<<<<<<<<
+content:''
+Invoice
+<<<<<<<<<<<<<<< end: urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 InvoiceLine <<<<<<<<<<<<<<<
+content:''

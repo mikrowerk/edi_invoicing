@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ubl:Invoice xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0</cbc:CustomizationID>
+  <cbc:ProfileID>urn:fdc:pep-pol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+  <cbc:ID>RG00343552</cbc:ID>
+  <cbc:IssueDate>2025-01-28</cbc:IssueDate>
+  <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+  <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+  <cbc:BuyerReference>-</cbc:BuyerReference>
+  <cac:OrderReference>
+    <cbc:ID>100277182</cbc:ID>
+    <cbc:SalesOrderID>AB00357890</cbc:SalesOrderID>
+  </cac:OrderReference>
+  <cac:DespatchDocumentReference>
+    <cbc:ID>LS00391390</cbc:ID>
+  </cac:DespatchDocumentReference>
+  <cac:AccountingSupplierParty>
+    <cac:Party>
+      <cbc:EndpointID schemeID="EM">rechnung@seller.de</cbc:EndpointID>
+      <cac:PartyName>
+        <cbc:Name>Seller GmbH</cbc:Name>
+      </cac:PartyName>
+      <cac:PostalAddress>
+        <cbc:StreetName>Seller-Str. 2</cbc:StreetName>
+        <cbc:CityName>Seller-City</cbc:CityName>
+        <cbc:PostalZone>01234</cbc:PostalZone>
+        <cac:Country>
+          <cbc:IdentificationCode>DE</cbc:IdentificationCode>
+        </cac:Country>
+      </cac:PostalAddress>
+      <cac:PartyTaxScheme>
+        <cbc:CompanyID>DE441339576</cbc:CompanyID>
+        <cac:TaxScheme>
+          <cbc:ID>VAT</cbc:ID>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>Seller GmbH</cbc:RegistrationName>
+        <cbc:CompanyID>HRA 1963</cbc:CompanyID>
+        <cbc:CompanyLegalForm>DE441339576 Seller GmbH HRB 123456</cbc:CompanyLegalForm>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:Name>Seller Team</cbc:Name>
+        <cbc:Telephone>+49 123456789</cbc:Telephone>
+        <cbc:ElectronicMail>info@seller.com</cbc:ElectronicMail>
+      </cac:Contact>
+    </cac:Party>
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cac:Party>
+      <cbc:EndpointID schemeID="EM">buyer@acme.com</cbc:EndpointID>
+      <cac:PartyIdentification>
+        <cbc:ID>D1234567</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PostalAddress>
+        <cbc:StreetName>Buyer-Str. 8</cbc:StreetName>
+        <cbc:CityName>MyCity</cbc:CityName>
+        <cbc:PostalZone>88888</cbc:PostalZone>
+        <cac:Country>
+          <cbc:IdentificationCode>DE</cbc:IdentificationCode>
+        </cac:Country>
+      </cac:PostalAddress>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>Acme GmbH</cbc:RegistrationName>
+      </cac:PartyLegalEntity>
+    </cac:Party>
+  </cac:AccountingCustomerParty>
+  <cac:Delivery>
+    <cbc:ActualDeliveryDate>2025-01-27</cbc:ActualDeliveryDate>
+    <cac:DeliveryLocation>
+      <cac:Address>
+        <cbc:StreetName>Hanns-Schwindt-Str. 8</cbc:StreetName>
+        <cbc:CityName>München</cbc:CityName>
+        <cbc:PostalZone>81829</cbc:PostalZone>
+        <cac:Country>
+          <cbc:IdentificationCode>DE</cbc:IdentificationCode>
+        </cac:Country>
+      </cac:Address>
+    </cac:DeliveryLocation>
+    <cac:DeliveryParty>
+      <cac:PartyName>
+        <cbc:Name>griffity GmbH</cbc:Name>
+      </cac:PartyName>
+    </cac:DeliveryParty>
+  </cac:Delivery>
+  <cac:PaymentMeans>
+    <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+    <cbc:PaymentID>RG00343552</cbc:PaymentID>
+    <cac:PayeeFinancialAccount>
+      <cbc:ID>DE66850503003200082460</cbc:ID>
+      <cac:FinancialInstitutionBranch>
+        <cbc:ID>OSDDDE81XXX</cbc:ID>
+      </cac:FinancialInstitutionBranch>
+    </cac:PayeeFinancialAccount>
+  </cac:PaymentMeans>
+  <cac:PaymentMeans>
+    <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+    <cbc:PaymentID>RG00343552</cbc:PaymentID>
+    <cac:PayeeFinancialAccount>
+      <cbc:ID>DE43500105175451887913</cbc:ID>
+      <cac:FinancialInstitutionBranch>
+        <cbc:ID>INGDDEFFXXX</cbc:ID>
+      </cac:FinancialInstitutionBranch>
+    </cac:PayeeFinancialAccount>
+  </cac:PaymentMeans>
+  <cac:PaymentTerms>
+    <cbc:Note>Zahlung per Paypal, Betrag dankend erhalten</cbc:Note>
+  </cac:PaymentTerms>
+  <cac:AllowanceCharge>
+    <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+    <cbc:AllowanceChargeReason>Versandkosten</cbc:AllowanceChargeReason>
+    <cbc:Amount currencyID="EUR">15.80</cbc:Amount>
+    <cac:TaxCategory>
+      <cbc:ID>S</cbc:ID>
+      <cbc:Percent>19.00</cbc:Percent>
+      <cac:TaxScheme>
+        <cbc:ID>VAT</cbc:ID>
+      </cac:TaxScheme>
+    </cac:TaxCategory>
+  </cac:AllowanceCharge>
+  <cac:TaxTotal>
+    <cbc:TaxAmount currencyID="EUR">87.42</cbc:TaxAmount>
+    <cac:TaxSubtotal>
+      <cbc:TaxableAmount currencyID="EUR">460.10</cbc:TaxableAmount>
+      <cbc:TaxAmount currencyID="EUR">87.42</cbc:TaxAmount>
+      <cac:TaxCategory>
+        <cbc:ID>S</cbc:ID>
+        <cbc:Percent>19.00</cbc:Percent>
+        <cac:TaxScheme>
+          <cbc:ID>VAT</cbc:ID>
+        </cac:TaxScheme>
+      </cac:TaxCategory>
+    </cac:TaxSubtotal>
+  </cac:TaxTotal>
+  <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="EUR">444.30</cbc:LineExtensionAmount>
+    <cbc:TaxExclusiveAmount currencyID="EUR">460.10</cbc:TaxExclusiveAmount>
+    <cbc:TaxInclusiveAmount currencyID="EUR">547.52</cbc:TaxInclusiveAmount>
+    <cbc:AllowanceTotalAmount currencyID="EUR">0.00</cbc:AllowanceTotalAmount>
+    <cbc:ChargeTotalAmount currencyID="EUR">15.80</cbc:ChargeTotalAmount>
+    <cbc:PrepaidAmount currencyID="EUR">0.00</cbc:PrepaidAmount>
+    <cbc:PayableAmount currencyID="EUR">547.52</cbc:PayableAmount>
+  </cac:LegalMonetaryTotal>
+  <cac:InvoiceLine>
+    <cbc:ID>100</cbc:ID>
+    <cbc:Note>Versanddatum: 2025-01-27</cbc:Note>
+    <cbc:InvoicedQuantity unitCode="C62">30.00</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="EUR">147.30</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>Tischbanner /rechteckig mit gespitzter Unterkante und Kordel (doppellagig /zwei Druckseiten /beidseitig positiver Druck)</cbc:Description>
+      <cbc:Name>10TISCHB03300D10</cbc:Name>
+      <cac:SellersItemIdentification>
+        <cbc:ID>10TISCHB03300D10</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:ClassifiedTaxCategory>
+        <cbc:ID>S</cbc:ID>
+        <cbc:Percent>19.00</cbc:Percent>
+        <cac:TaxScheme>
+          <cbc:ID>VAT</cbc:ID>
+        </cac:TaxScheme>
+      </cac:ClassifiedTaxCategory>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="EUR">4.91</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="C62">1.00</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>101</cbc:ID>
+    <cbc:Note>Versanddatum: 2025-01-27</cbc:Note>
+    <cbc:InvoicedQuantity unitCode="C62">30.00</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="EUR">297.00</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Name>Kombiständer, Chrom, Höhe 44 cm</cbc:Name>
+      <cac:SellersItemIdentification>
+        <cbc:ID>ZB10EZ1010120000</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:ClassifiedTaxCategory>
+        <cbc:ID>S</cbc:ID>
+        <cbc:Percent>19.00</cbc:Percent>
+        <cac:TaxScheme>
+          <cbc:ID>VAT</cbc:ID>
+        </cac:TaxScheme>
+      </cac:ClassifiedTaxCategory>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="EUR">9.90</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="C62">1.00</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+</ubl:Invoice>
