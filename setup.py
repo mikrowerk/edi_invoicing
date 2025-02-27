@@ -16,7 +16,7 @@ setuptools.setup(
     name="mikrowerk_edi_invoicing",
 
     # version of the module
-    version="0.2.0",
+    version="0.2.1",
 
     # Name of Author
     author="Mikrowerk a Gammadata Division",
