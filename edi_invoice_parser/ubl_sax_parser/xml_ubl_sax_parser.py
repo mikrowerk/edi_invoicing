@@ -29,11 +29,14 @@ class UblSaxHandler(sax.ContentHandler):
         self.trade_line_list: [XRechnungTradeLine] = []
         self.current_trade_tax: XRechnungAppliedTradeTax | None = None
         self.applicable_trade_taxes: [XRechnungAppliedTradeTax] = []
+        self.allowance_line_count = 99900
+        self.allowance_line_count_incr = 10
 
     def startDocument(self):
         print("------------------------------ Start ---------------------------------------------------")
         self.x_rechnung = XRechnung()
         self.stack = deque()
+        self.allowance_line_count = 99900
 
     def endDocument(self):
         self.x_rechnung.name = (
@@ -45,6 +48,7 @@ class UblSaxHandler(sax.ContentHandler):
         _ns, _tag_name = name
         self.current_attributes = attrs
         self.stack.append((_tag_name, attrs))
+        _path = '/'.join([tag for tag, _attrs in self.stack])
         self.content = ""
         match _tag_name:
             case "Party":
@@ -59,15 +63,14 @@ class UblSaxHandler(sax.ContentHandler):
             case "InvoiceLine":
                 self.current_trade_line = XRechnungTradeLine()
                 self.current_trade_tax = None
-            case "AllowanceCharge":
-                self.current_trade_line = XRechnungTradeLine()
-                self.current_trade_tax = None
             case "TaxSubtotal":
                 self.current_trade_tax = XRechnungAppliedTradeTax()
             case "ClassifiedTaxCategory":
                 self.current_trade_tax = XRechnungAppliedTradeTax()
-
-        _path = '/'.join([tag for tag, _attrs in self.stack])
+            case "AllowanceCharge":
+                if _path.endswith('Invoice/AllowanceCharge'):
+                    self.current_trade_line = XRechnungTradeLine()
+                    self.current_trade_tax = None
 
         if _path.endswith('/AllowanceCharge/TaxCategory'):
             self.current_trade_tax = XRechnungAppliedTradeTax()
@@ -90,7 +93,7 @@ class UblSaxHandler(sax.ContentHandler):
             self.handle_payment_means(_path, _tag_name, _content, attrs)
         if "/InvoiceLine" in _path:
             self.handle_invoice_line(_path, _tag_name, _content, attrs)
-        if "/AllowanceCharge" in _path:
+        if "Invoice/AllowanceCharge" in _path:
             self.handle_allowance_charge(_path, _tag_name, _content, attrs)
         if "/ClassifiedTaxCategory" in _path:
             self.handle_trade_tax(_path, _tag_name, _content, attrs)
@@ -114,8 +117,10 @@ class UblSaxHandler(sax.ContentHandler):
         if _path.endswith("Invoice/TaxTotal/TaxSubtotal"):
             self.applicable_trade_taxes.append(self.current_trade_tax)
         elif _path.endswith('Invoice/AllowanceCharge'):
-            self.current_trade_line.trade_tax = self.current_trade_tax
-            self.current_trade_line.line_id = "99999"
+            if hasattr(self.current_trade_line, "trade_tax"):
+                self.current_trade_line.trade_tax = self.current_trade_tax
+            self.current_trade_line.line_id = f"{self.allowance_line_count}"
+            self.allowance_line_count += self.allowance_line_count_incr
             self.current_trade_line.seller_assigned_id = "AllowanceCharge"
             self.current_trade_line.total_amount_net = (
                     self.current_trade_line.price_unit * self.current_trade_line.quantity_billed)
@@ -139,6 +144,8 @@ class UblSaxHandler(sax.ContentHandler):
                 self.x_rechnung.doc_id = content
             case "Invoice/IssueDate":
                 self.x_rechnung.issued_date_time = datetime.fromisoformat(content)
+            case "Invoice/Delivery/ActualDeliveryDate":
+                self.x_rechnung.delivered_date_time = datetime.fromisoformat(content)
             case "Invoice/InvoiceTypeCode":
                 self.x_rechnung.doc_type_code = content
             case "Invoice/DocumentCurrencyCode":
@@ -160,8 +167,8 @@ class UblSaxHandler(sax.ContentHandler):
                     self.x_rechnung.payment_means = self.current_payment_means_list[0]
             case "Invoice/PaymentTerms/Note":
                 self.x_rechnung.payment_terms = content
-            case "Invoice/AllowanceCharge/Amount":
-                self.x_rechnung.allowance_total_amount = Decimal(content)
+            # case "Invoice/AllowanceCharge/Amount":
+            #     self.x_rechnung.allowance_total_amount = Decimal(content)
             case "Invoice/TaxTotal/TaxAmount":
                 self.x_rechnung.tax_total_amount = [XRechnungCurrency(Decimal(content),
                                                                       attrs.get('currencyID', 'EUR'))]
@@ -244,6 +251,8 @@ class UblSaxHandler(sax.ContentHandler):
             self.current_trade_line.total_amount_net = float(content)
         elif path.endswith("/InvoiceLine/Item/Description"):
             self.current_trade_line.description = content
+        elif path.endswith("/InvoiceLine/Note"):
+            self.current_trade_line.description += f", {content}" if len(content) > 0 else content
         elif path.endswith("/InvoiceLine/Item/Name"):
             self.current_trade_line.name = content
         elif path.endswith("/InvoiceLine/Item/SellersItemIdentification/ID"):
