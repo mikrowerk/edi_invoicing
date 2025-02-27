@@ -5,7 +5,7 @@ from parameterized import parameterized
 from facturx import get_facturx_xml_from_pdf
 
 from . import get_checked_file_path
-from . import  parse_and_map_x_rechnung
+from edi_invoice_parser.cross_industry_invoice_mapper import parse_and_map_x_rechnung
 from . import XRechnung
 
 

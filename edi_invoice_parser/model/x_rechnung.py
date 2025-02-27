@@ -116,6 +116,9 @@ class XRechnungPaymentMeans:
 
 @dataclass
 class XRechnung:
+    """
+    Model an EDI invoice for mapping CII or UBL Invoices
+    """
     name: str = None  # 'Name'
     doc_id: str = None  # 'Document ID'
     doc_type_code: str = None  # 'Subject Code'

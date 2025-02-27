@@ -1,10 +1,10 @@
-from drafthorse.models.elements import (StringElement, DirectDateTimeElement, DateTimeElement, DecimalElement,
-                                        IndicatorElement, QuantityElement, CurrencyElement, ClassificationElement,
-                                        Container)
-from drafthorse.models.party import EmailURI, PhoneNumber, FaxNumber
-from drafthorse.models.note import IncludedNote
-from drafthorse.models.payment import PaymentTerms
-from drafthorse.models.container import IDContainer, StringContainer, CurrencyContainer
+from .models.elements import (StringElement, DirectDateTimeElement, DateTimeElement, DecimalElement,
+                              IndicatorElement, QuantityElement, CurrencyElement, ClassificationElement,
+                              Container)
+from .models.party import EmailURI, PhoneNumber, FaxNumber
+from .models.note import IncludedNote
+from .models.payment import PaymentTerms
+from .models.container import IDContainer, StringContainer, CurrencyContainer
 
 """
 Code zur Beschreibung des Datumsformats

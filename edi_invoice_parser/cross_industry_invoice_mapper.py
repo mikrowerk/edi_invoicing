@@ -3,12 +3,20 @@ This implements a mapper from a drafthorse parsed x-rechnung-xml to the internal
 """
 from lxml import etree
 
-from ..model.x_rechnung import XRechnung
-from ..x_mapper.xml_cii_dom_parser import XRechnungCIIXMLParser
-from ..x_mapper.xml_ubl_sax_parser import XRechnungUblXMLParser
+from .model.x_rechnung import XRechnung
+from .cii_dom_parser import XRechnungCIIXMLParser
+from .ubl_sax_parser.xml_ubl_sax_parser import XRechnungUblXMLParser
 
 
-def parse_and_map_x_rechnung(_xml: any) -> XRechnung:
+def parse_and_map_x_rechnung(_xml: bytes) -> XRechnung:
+    """
+
+    Args:
+        _xml: bytes with xml file
+
+    Returns: XRechnung
+
+    """
     _parser = None
     tree = etree.fromstring(_xml)
     if tree.tag == '{urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100}CrossIndustryInvoice':

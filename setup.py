@@ -16,7 +16,7 @@ setuptools.setup(
     name="mikrowerk_edi_invoicing",
 
     # version of the module
-    version="0.2.1",
+    version="0.3.0",
 
     # Name of Author
     author="Mikrowerk a Gammadata Division",
@@ -33,7 +33,7 @@ setuptools.setup(
 
     # Any link to reach this module, ***if*** you have any webpage or github profile
     # url="https://github.com/username/",
-    packages=setuptools.find_packages(exclude=["tests"]),
+    packages=setuptools.find_packages(exclude=["tests_*", "tests"]),
 
     package_dir={"": "."},
     include_package_data=True,
@@ -51,14 +51,13 @@ setuptools.setup(
         "black",
         "coverage",
         "codecov",
-        "drafthorse~=2.4.0",
         "factur-x==3.6",
         "jsonpickle~=4.0.1",
         "parameterized",
         "schwifty",
     ],
 
-    license="Affero-3",
+    license="GNU Affero General Public License v3 ",
 
     # classifiers like program is suitable for python3, just leave as it is.
     classifiers=[

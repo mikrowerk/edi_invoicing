@@ -10,7 +10,7 @@ from decimal import Decimal
 from ..model.x_rechnung import (XRechnung, XRechnungTradeParty, XRechnungTradeAddress, XRechnungTradeContact,
                                 XRechnungPaymentMeans, XRechnungBankAccount, XRechnungCurrency, XRechnungTradeLine,
                                 XRechnungAppliedTradeTax)
-from .xml_abstract_x_rechnung_parser import XMLAbstractXRechnungParser
+from ..model import XMLAbstractXRechnungParser
 
 
 class UblSaxHandler(sax.ContentHandler):

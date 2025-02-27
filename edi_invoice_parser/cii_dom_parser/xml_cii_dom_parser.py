@@ -3,16 +3,15 @@ This implements a mapper from a drafthorse parsed x-rechnung-xml to the internal
 """
 from datetime import datetime
 
-from drafthorse.models.document import Document
+from .models.document import Document
 
-from .xml_abstract_x_rechnung_parser import XMLAbstractXRechnungParser
+from ..model.xml_abstract_x_rechnung_parser import XMLAbstractXRechnungParser
 from ..model.x_rechnung import (XRechnung, XRechnungCurrency, XRechnungTradeParty, XRechnungTradeAddress,
-                              XRechnungTradeContact, XRechnungPaymentMeans, XRechnungFinancialCard,
-                              XRechnungTradeLine, XRechnungAppliedTradeTax, XRechnungBankAccount)
+                                XRechnungTradeContact, XRechnungPaymentMeans, XRechnungFinancialCard,
+                                XRechnungTradeLine, XRechnungAppliedTradeTax, XRechnungBankAccount)
 
 
 class XRechnungCIIXMLParser(XMLAbstractXRechnungParser):
-
 
     @classmethod
     def parse_and_map_x_rechnung(cls, _xml: any) -> XRechnung:
