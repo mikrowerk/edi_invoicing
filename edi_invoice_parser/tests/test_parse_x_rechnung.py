@@ -4,9 +4,9 @@ from parameterized import parameterized
 
 from facturx import get_facturx_xml_from_pdf
 
-from ..util.file_helper import get_checked_file_path
-from ..model.x_rechnung import XRechnung
-from ..x_mapper.cross_industry_invoice_mapper import parse_and_map_x_rechnung
+from . import get_checked_file_path
+from . import  parse_and_map_x_rechnung
+from . import XRechnung
 
 
 class XRechnungEinfachTestCase(unittest.TestCase):

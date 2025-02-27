@@ -33,7 +33,7 @@ setuptools.setup(
 
     # Any link to reach this module, ***if*** you have any webpage or github profile
     # url="https://github.com/username/",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(exclude=["tests"]),
 
     package_dir={"": "."},
     include_package_data=True,
