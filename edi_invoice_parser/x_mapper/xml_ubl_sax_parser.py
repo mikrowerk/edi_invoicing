@@ -8,8 +8,8 @@ import xml.sax as sax
 from decimal import Decimal
 
 from ..model.x_rechnung import (XRechnung, XRechnungTradeParty, XRechnungTradeAddress, XRechnungTradeContact,
-                              XRechnungPaymentMeans, XRechnungBankAccount, XRechnungCurrency, XRechnungTradeLine,
-                              XRechnungAppliedTradeTax)
+                                XRechnungPaymentMeans, XRechnungBankAccount, XRechnungCurrency, XRechnungTradeLine,
+                                XRechnungAppliedTradeTax)
 from .xml_abstract_x_rechnung_parser import XMLAbstractXRechnungParser
 
 
@@ -58,12 +58,19 @@ class UblSaxHandler(sax.ContentHandler):
                 self.current_payment_means.payee_account = XRechnungBankAccount()
             case "InvoiceLine":
                 self.current_trade_line = XRechnungTradeLine()
+                self.current_trade_tax = None
+            case "AllowanceCharge":
+                self.current_trade_line = XRechnungTradeLine()
+                self.current_trade_tax = None
             case "TaxSubtotal":
                 self.current_trade_tax = XRechnungAppliedTradeTax()
             case "ClassifiedTaxCategory":
                 self.current_trade_tax = XRechnungAppliedTradeTax()
 
         _path = '/'.join([tag for tag, _attrs in self.stack])
+
+        if _path.endswith('/AllowanceCharge/TaxCategory'):
+            self.current_trade_tax = XRechnungAppliedTradeTax()
 
         print(f">>>>>>>>>>>>>>> start: {_ns} {_tag_name} >>>>>>>>>>>>>>>>")
         print(_path)
@@ -83,9 +90,13 @@ class UblSaxHandler(sax.ContentHandler):
             self.handle_payment_means(_path, _tag_name, _content, attrs)
         if "/InvoiceLine" in _path:
             self.handle_invoice_line(_path, _tag_name, _content, attrs)
+        if "/AllowanceCharge" in _path:
+            self.handle_allowance_charge(_path, _tag_name, _content, attrs)
         if "/ClassifiedTaxCategory" in _path:
             self.handle_trade_tax(_path, _tag_name, _content, attrs)
         if "/TaxTotal/TaxSubtotal" in _path:
+            self.handle_trade_tax(_path, _tag_name, _content, attrs)
+        if "/AllowanceCharge/TaxCategory" in _path:
             self.handle_trade_tax(_path, _tag_name, _content, attrs)
 
         # collect results when closing a main tag
@@ -102,6 +113,13 @@ class UblSaxHandler(sax.ContentHandler):
 
         if _path.endswith("Invoice/TaxTotal/TaxSubtotal"):
             self.applicable_trade_taxes.append(self.current_trade_tax)
+        elif _path.endswith('Invoice/AllowanceCharge'):
+            self.current_trade_line.trade_tax = self.current_trade_tax
+            self.current_trade_line.line_id = "99999"
+            self.current_trade_line.seller_assigned_id = "AllowanceCharge"
+            self.current_trade_line.total_amount_net = (
+                    self.current_trade_line.price_unit * self.current_trade_line.quantity_billed)
+            self.trade_line_list.append(self.current_trade_line)
 
         # invoice top level properties
         self.handle_invoice(_path, _tag_name, _content, attrs)
@@ -238,6 +256,17 @@ class UblSaxHandler(sax.ContentHandler):
             self.current_trade_line.expiry_date = datetime.fromisoformat(content)
         elif path.endswith("/InvoiceLine/Price/PriceAmount"):
             self.current_trade_line.price_unit = float(content)
+
+    def handle_allowance_charge(self, path: str, tag: str, content: str, attr=None):
+        if path.endswith("/AllowanceCharge/AllowanceChargeReason"):
+            self.current_trade_line.name = content
+        elif path.endswith("/AllowanceCharge/Amount"):
+            self.current_trade_line.price_unit = float(content)
+        elif path.endswith("/AllowanceCharge/ChargeIndicator"):
+            if content.lower() == "true":
+                self.current_trade_line.quantity_billed = 1.0
+            else:
+                self.current_trade_line.quantity_billed = -1.0
 
     def handle_trade_tax(self, path: str, tag: str, content: str, attr=None):
         if path.endswith("/ClassifiedTaxCategory/ID") or path.endswith("/TaxCategory/ID"):

@@ -178,7 +178,7 @@ class XRechnung:
     def map_tradeline_to_dict(cls, x_trade_line: XRechnungTradeLine) -> dict:
         _dict = asdict(x_trade_line)
         _dict.update(
-            {'trade_tax': asdict(x_trade_line.trade_tax),
+            {'trade_tax': asdict(x_trade_line.trade_tax) if x_trade_line.trade_tax is not None else None,
              'price_unit': float(x_trade_line.price_unit),
              'quantity_billed': float(x_trade_line.quantity_billed),
              'total_amount_net': float(x_trade_line.total_amount_net),
